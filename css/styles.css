@@ -1,0 +1,67 @@
+:root {
+  --color-primary-dark: #31261a;
+  --color-primary-light: #faf4ea;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+}
+
+/* Base */
+body {
+ color: var(--color-primary-dark);
+}
+
+ul {
+  /* убирраем маркеровку */
+  list-style: none;
+}
+/* Button */
+.button {
+  padding: 16px 32px;
+
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-light);
+  background: var(--color-brand-light);
+
+  color: var(--color-primary-light);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  /* Добавить символ руки кликабельности при наведении на кнопку у ссылко это по дефолту стоит */
+  cursor: pointer;
+}
+
+.button:hover {
+  /* сделать фон прозрачным */
+  background: transparent;
+  color: var(--color-brand-dark);
+}
+
+/* Link */
+.link {
+  color: var(--color-primary-light);
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+/* Hero-section */
+.hero-title {
+  color: var(--color-primary-light);
+}
+
+.hero-title .accent {
+  color: var(--color-brand-light);
+}
+
+/* Advantages-section */
+.advantages-list {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+}
+
+.section-title {
+  color: var(--color-primary-dark);
+}
