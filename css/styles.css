@@ -64,6 +64,9 @@ h6 p {
 ul {
   /* убирраем маркеровку */
   list-style: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 /* скрыть заголовок */
@@ -89,7 +92,6 @@ ul {
 /* Button */
 .button {
   padding: 16px 32px;
-
   border-radius: 8px;
   border: 2px solid var(--color-brand-light);
   background: var(--color-brand-light);
@@ -122,9 +124,35 @@ ul {
   color: var(--color-brand-light);
 }
 
+/* Header section */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 64px;
+}
+
 /* Hero-section */
 
 .hero {
+  background-image: url(../images/hero-section.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  /* Дєкоративний ефект */
+  background-attachment: fixed ;
   padding: 272px 0;
 }
 
@@ -142,13 +170,16 @@ ul {
 }
 
 /* Advantages-section */
-/* .advantages {
- 
-} */
+.advantages {
+  padding: 16px 0;
+  background-color: var(--color-brand-light);
+}
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
   color: var(--color-primary-light);
-  background-color: var(--color-brand-light);
 }
 
 .advantages-item {
@@ -185,6 +216,12 @@ ul {
   padding-top: 96px;
 }
 
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40px; */
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
@@ -200,6 +237,13 @@ ul {
   text-transform: uppercase;
 }
 
+.tranditions-text:nth-child(2) {
+  max-width: 640px;
+}
+
+.tranditions-text:nth-child(3) {
+  max-width: 340px;
+}
 /* formats section */
 .formats-title {
   margin-bottom: 80px;
@@ -214,6 +258,26 @@ ul {
   max-width: 301px;
   font-size: 14px;
   font-weight: 300;
+}
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.format-card {
+  max-width: 349px;
+  height: 444px;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+  border: 1px solid lightgray;
 }
 
 .contact-title {
