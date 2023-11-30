@@ -38,7 +38,9 @@
   --color-brand-dark: #465929;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -204,15 +206,31 @@ ul {
   text-align: center;
 }
 
+/* Chefs section */
+
+.chef-list {
+display: flex;
+gap: 40px 30px;
+/* flex-wrap: wrap; */
+}
+
 .chefs-title {
   margin: 0 auto 80px;
   width: 520px;
 }
 
 .chef-title {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   font-size: 40px;
   font-weight: 600;
+}
+
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0;
 }
 
 .chefs-title::before,
@@ -221,6 +239,20 @@ ul {
   width: 352px;
   border: 2px solid #cfcfbc;
   content: '';
+}
+
+.chef-list {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-item {
+  flex-basis: calc(100% - 30px / 2);
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
 }
 
 .chef-photo {
@@ -268,6 +300,13 @@ ul {
   border-radius: 400px 400px 0px 0px;
 }
 /* formats section */
+
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -303,36 +342,36 @@ ul {
   border: 1px solid lightgray;
 }
 
-/* .carousel-button {
-
-} */
-
 .carousel-button {
   border: 0;
   background-color: var(--color-primary-light);
   fill: var(--color-primary-light);
   background-color: transparent;
   border-radius: 50%;
-   transform: rotate(180deg);
-  /* border: 1px solid var(--color-primary-dark); */
-}
+  transform: rotate(180deg);
 
-/* .formats-arrow {
-  fill: var(--color-primary-light);
-} */
+}
 
 .carousel-button:hover {
   background-color: var(--color-primary-light);
   fill: var(--color-primary-dark);
 }
 
-/* .format-card:nth-child(1) {
-background-image: url(../images/carusel1.jpg);
+/* Contact section */
+
+.contact-section {
+  padding-bottom: 96px;
 }
 
-.format-card:nth-child(2) {
-background-image: url(../images/carusel2.jpg);
-} */
+.contact-container {
+display: flex;
+gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+}
 
 .contact-title {
   margin-bottom: 16px;
@@ -341,11 +380,36 @@ background-image: url(../images/carusel2.jpg);
 /* Footer */
 
 .footer {
+  padding: 32px 0;
   background-color: var(--color-primary-dark);
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+/* .footer-menu {
+  display: flex;
+} */
+
+/* .footer-address {
+  display: flex;
+  gap: 16px;
+} */
+
+.footer-social {
+  display: flex;
+  gap: 22px;
 }
 
 address {
