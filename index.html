@@ -29,7 +29,7 @@
               <li><a class="link" href="#contact">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
         </div>
       </div>
     </header>
@@ -89,15 +89,15 @@
                 <div>
                   <h3 class="chef-title">Настя</h3>
                   <div class="chef-text">
-                  <p>Привіт, я Настя!</p>
-                  <p>
-                    Вже 10 років, я свтілюю <br />
-                    у життя цікаві та смачні ідеї.
-                  </p>
-                  <p>
-                    Я випічу для вас <br />
-                    найсмачніщі вироби!
-                  </p>
+                    <p>Привіт, я Настя!</p>
+                    <p>
+                      Вже 10 років, я свтілюю <br />
+                      у життя цікаві та смачні ідеї.
+                    </p>
+                    <p>
+                      Я випічу для вас <br />
+                      найсмачніщі вироби!
+                    </p>
                   </div>
                 </div>
               </article>
@@ -112,16 +112,17 @@
                 <div>
                   <h3 class="chef-title">Влад</h3>
                   <p>Привіт, я Влад!</p>
-                  <div class="chef-text"> <p>
-                    Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
-                    любов, з <br />
-                    якою ми ділимось кожен раз з Вами через нашу випічку!
-                  </p>
-                  <p>
-                    Я зроблю для вас унікальну начинку <br />
-                    на будь який смак!
-                  </p></div>
-                 
+                  <div class="chef-text">
+                    <p>
+                      Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                      любов, з <br />
+                      якою ми ділимось кожен раз з Вами через нашу випічку!
+                    </p>
+                    <p>
+                      Я зроблю для вас унікальну начинку <br />
+                      на будь який смак!
+                    </p>
+                  </div>
                 </div>
               </article>
             </li>
@@ -270,5 +271,37 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <!-- <svg width="32" height="32">
+            <use src="./images/icons-svg.svg#icon-icon"></use>
+          </svg> -->
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 8L16 16L24 8"
+              stroke="#31261A"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 24L16 16L24 24"
+              stroke="#31261A"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>

@@ -174,11 +174,14 @@ ul {
 
 /* Advantages-section */
 .advantages {
+  position: sticky;
+  top: 0;
   padding: 16px 0;
   background-color: var(--color-brand-light);
 }
 
 .advantages-list {
+  top: 0;
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -209,12 +212,13 @@ ul {
 /* Chefs section */
 
 .chef-list {
-display: flex;
-gap: 40px 30px;
-/* flex-wrap: wrap; */
+  display: flex;
+  gap: 40px 30px;
+  /* flex-wrap: wrap; */
 }
 
 .chefs-title {
+  position: relative;
   margin: 0 auto 80px;
   width: 520px;
 }
@@ -235,10 +239,20 @@ gap: 40px 30px;
 
 .chefs-title::before,
 .chefs-title::after {
-  display: block;
+  position: absolute;
+  bottom: 24px;
+  /* display: block; */
   width: 352px;
   border: 2px solid #cfcfbc;
   content: '';
+}
+
+.chefs-title::before {
+  left: -360px;
+}
+
+.chefs-title::after {
+  right: -360px;
 }
 
 .chef-list {
@@ -349,7 +363,6 @@ gap: 40px 30px;
   background-color: transparent;
   border-radius: 50%;
   transform: rotate(180deg);
-
 }
 
 .carousel-button:hover {
@@ -364,8 +377,8 @@ gap: 40px 30px;
 }
 
 .contact-container {
-display: flex;
-gap: 32px;
+  display: flex;
+  gap: 32px;
 }
 
 .contact-map {
@@ -380,12 +393,35 @@ gap: 32px;
 /* Footer */
 
 .footer {
+  position: relative;
   padding: 32px 0;
   background-color: var(--color-primary-dark);
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url(../images/bread1.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(../images/bread2.png);
 }
 
 .footer-container {
@@ -444,4 +480,40 @@ address {
   fill: var(--color-brand-light);
   border-radius: 50%;
   background-color: #faf4ea;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: relative;
+  width: 680px;
+  height: 680px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+  /* padding: 40px; */
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  border: 0;
+  background-color: var(--color-primary-light);
 }
