@@ -106,21 +106,22 @@ ul {
   cursor: pointer;
 
   /* Додавати до кнопки бо вона не наслідує шріфт */
-  font-family: inherit;
+  /* font-family: inherit; */
 }
 
 .button:hover {
   /* сделать фон прозрачным */
-  background: transparent;
+  /* background: transparent; */
+  background-color: var(--color-primary-light);
   color: var(--color-brand-dark);
 }
 
 /* Link */
 .link {
   color: var(--color-primary-light);
-
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .link:hover {
@@ -128,6 +129,14 @@ ul {
 }
 
 /* Header section */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -150,7 +159,8 @@ ul {
 /* Hero-section */
 
 .hero {
-  background-image: url(../images/hero-background.jpg);
+  background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%),
+ url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -362,12 +372,15 @@ ul {
   fill: var(--color-primary-light);
   background-color: transparent;
   border-radius: 50%;
-  transform: rotate(180deg);
 }
 
 .carousel-button:hover {
   background-color: var(--color-primary-light);
   fill: var(--color-primary-dark);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 /* Contact section */
@@ -493,15 +506,20 @@ address {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
 }
 
 .modal {
   position: relative;
-  width: 680px;
-  height: 680px;
+  width: 100%;
+  max-width: 680px;
+  max-height: 680px;
+  height: 100%;
   background-color: var(--color-primary-light);
   border-radius: 32px;
-  /* padding: 40px; */
 }
 
 .backdrop.is-hidden {
