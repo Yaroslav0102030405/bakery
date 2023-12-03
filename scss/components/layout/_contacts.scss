@@ -1,0 +1,21 @@
+.contact {
+  padding-bottom: 96px;
+
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__map {
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+
+  &__text {
+    margin-bottom: 42px;
+  }
+}

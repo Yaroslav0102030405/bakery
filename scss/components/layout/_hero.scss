@@ -12,17 +12,17 @@
   /* Дєкоративний ефект */
   background-attachment: fixed;
   padding: 272px 0;
+
+  &__title {
+    margin-bottom: 0;
+    color: var(--color-primary-light);
+    text-align: center;
+
+    font-size: 128px;
+    font-weight: 900;
+  }
 }
 
-.hero-title {
-  margin-bottom: 0;
-  color: var(--color-primary-light);
-  text-align: center;
-
-  font-size: 128px;
-  font-weight: 900;
-}
-
-.hero-title .accent {
+.hero__title .accent {
   color: var(--color-brand-light);
 }
