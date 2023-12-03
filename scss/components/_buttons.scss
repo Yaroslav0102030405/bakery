@@ -1,0 +1,24 @@
+/* Button */
+.button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-light);
+  background: var(--color-brand-light);
+  color: var(--color-primary-light);
+
+  font-size: 18px;
+  font-weight: 600;
+  /* Добавить символ руки кликабельности при наведении на кнопку у ссылко это по дефолту стоит */
+  cursor: pointer;
+
+  /* Додавати до кнопки бо вона не наслідує шріфт */
+  /* font-family: inherit; */
+}
+
+.button:hover {
+  /* сделать фон прозрачным */
+  /* background: transparent; */
+  background-color: var(--color-primary-light);
+  color: var(--color-brand-dark);
+  /* border-color: currentColor; */
+}

@@ -1,0 +1,89 @@
+.footer {
+  position: relative;
+  padding: 32px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url(../images/bread1.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(../images/bread2.png);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+/* .footer-menu {
+  display: flex;
+} */
+
+/* .footer-address {
+  display: flex;
+  gap: 16px;
+} */
+
+.footer-social {
+  display: flex;
+  gap: 22px;
+}
+
+address {
+  font-style: normal;
+}
+
+.address-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.addres-copyright {
+  color: #a18268;
+  font-size: 14px;
+}
+
+.address-icon {
+  /* Це через властивість філ задається колір для іконки а не через властивість колір запамятайте*/
+  fill: var(--color-primary-light);
+
+  /* це обводка */
+  /* stroke: brown; */
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-light);
+  border-radius: 50%;
+  background-color: #faf4ea;
+}

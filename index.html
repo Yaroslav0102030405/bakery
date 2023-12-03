@@ -12,7 +12,7 @@
       rel="stylesheet"
     /> -->
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -143,6 +143,7 @@
             <ul class="formats-list">
               <li>
                 <article class="format-card">
+                  <img class="format-image" src="./images/carusel1.jpg" alt="Walrus format">
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -157,6 +158,7 @@
               </li>
               <li>
                 <article class="format-card">
+                    <img class="format-image" src="./images/carusel2.jpg" alt="Handlebar">
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -168,6 +170,7 @@
               </li>
               <li>
                 <article class="format-card">
+                    <img class="format-image" src="./images/carusel3.jpg" alt="Handlebar format">
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -196,7 +199,7 @@
               <p class="contact-text">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
-              <form name="contact-form" autocomplete="on" novalidate>
+              <form name="contact-form" autocomplete="on">
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name"
                     >Ім’я</label
@@ -207,6 +210,7 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Ім’я"
+                    required
                   />
                 </div>
 
@@ -220,6 +224,7 @@
                     id="user-name"
                     name="user-tel"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
 
@@ -233,6 +238,7 @@
                     id="user-name"
                     name="user-email"
                     placeholder="Електронна пошта"
+                    required
                   />
                 </div>
 

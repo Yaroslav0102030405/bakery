@@ -1,0 +1,37 @@
+/* Traditions section*/
+.traditions {
+  padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40px; */
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+.tranditions-text .brand {
+  color: var(--color-brand-light);
+  font-weight: 600;
+  /* text-transform: uppercase; */
+}
+
+.tranditions-text .uppercase {
+  /* color: var(--color-brand-light); */
+  text-transform: uppercase;
+}
+
+.tranditions-text:nth-child(2) {
+  max-width: 640px;
+}
+
+.tranditions-text:nth-child(3) {
+  max-width: 340px;
+}
+
+.traditions-bakerMan {
+  border-radius: 400px 400px 0px 0px;
+}

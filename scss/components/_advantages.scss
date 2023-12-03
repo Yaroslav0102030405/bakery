@@ -1,0 +1,19 @@
+.advantages {
+  position: sticky;
+  top: 0;
+  padding: 16px 0;
+  background-color: var(--color-brand-light);
+}
+
+.advantages-list {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  color: var(--color-primary-light);
+}
+
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
