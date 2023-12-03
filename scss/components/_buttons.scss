@@ -13,6 +13,10 @@
 
   /* Додавати до кнопки бо вона не наслідує шріфт */
   /* font-family: inherit; */
+
+  @media screen  and (max-width:  $desktop){
+    display: none;
+  }
 }
 
 .button:hover {

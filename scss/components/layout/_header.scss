@@ -23,5 +23,9 @@
     flex-grow: 1;
     justify-content: center;
     gap: 64px;
+
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
   }
 }
