@@ -13,11 +13,18 @@
 
   &__list {
     display: flex;
-    gap: 60px;
+    // flex-direction: column;
+    gap: 20px 60px;
+
+     @media screen and (min-width: $tablet) {
+     gap: 60px 60px ;
+    }
   }
 
   &__item {
-    flex-basis: calc(100% - 30px / 2);
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc(100% - 30px / 2);
+    }
   }
 }
 
@@ -41,6 +48,7 @@
 
 .chef-card {
   display: flex;
+  align-items: flex-start;
   gap: 30px;
 
   &__photo {
