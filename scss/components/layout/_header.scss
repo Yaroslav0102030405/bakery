@@ -19,13 +19,25 @@
   }
 
   &__list {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    gap: 64px;
-
-    @media screen and (max-width: $desktop) {
-      display: none;
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      gap: 64px;
     }
+  }
+}
+
+.header__burger {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  fill: var(--color-primary-light);
+  
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 }

@@ -5,9 +5,27 @@
 
 .container {
   width: 100%;
-  max-width: 1288px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
+
+  @media screen and (min-width: 600px) {
+    .container {
+      max-width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
 }
 
 @import './components/layout/section';
@@ -15,6 +33,7 @@
 @import './components/links';
 @import './components/layout/header';
 @import './components/layout/hero';
+@import './components/layout/mobile-menu';
 @import './components/layout/advantages';
 @import './components/layout/chefs';
 @import './components/layout/traditions';
@@ -24,4 +43,3 @@
 @import './components/layout/footer';
 @import './components/layout/modal';
 @import './components/layout/form';
-

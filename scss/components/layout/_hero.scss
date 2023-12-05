@@ -18,8 +18,15 @@
     color: var(--color-primary-light);
     text-align: center;
 
-    font-size: 128px;
+    font-size: 67px;
+    line-height: 1;
     font-weight: 900;
+  //  max-width: 292px;
+
+    @media screen and (min-width: $tablet) {
+    font-size: 128px;
+    line-height: 1.5;
+    }
   }
 }
 
