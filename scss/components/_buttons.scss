@@ -1,5 +1,6 @@
 /* Button */
 .button {
+  display: block;
   padding: 16px 32px;
   border-radius: 8px;
   border: 2px solid var(--color-brand-light);
@@ -13,11 +14,6 @@
 
   /* Додавати до кнопки бо вона не наслідує шріфт */
   /* font-family: inherit; */
-  display: none;
-  
-  @media screen  and (min-width:  $desktop){
-    display: block;
-  }
 }
 
 .button:hover {

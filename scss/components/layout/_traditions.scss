@@ -1,11 +1,16 @@
 /* Traditions section*/
 .traditions {
-  padding-top: 96px;
+  padding-top: 24px;
+
+   @media screen and (min-width: $desktop ) {
+     padding-top: 96px;
+    }
 
   &__container {
     display: flex;
     justify-content: space-between;
-    /* gap: 40px; */
+    gap: 40px; 
+    align-items: flex-start;
   }
 
   &__content {
@@ -13,11 +18,25 @@
   }
 
   &__title {
-    margin-bottom: 42px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    // font-weight: 900;
+    // line-height: 1.5;
+
+    @media screen and (min-width: $desktop ) {
+      font-size: 64px;
+      margin-bottom: 42px;
+    }
   }
 
   &__baker {
+    display: none;
     border-radius: 400px 400px 0px 0px;
+    // margin-left: 20px;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
   }
 }
 

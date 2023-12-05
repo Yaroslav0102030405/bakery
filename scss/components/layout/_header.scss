@@ -4,7 +4,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
+
+   @media screen and (min-width: $desktop) {
+       padding-top: 32px;
+    }
 
   &__container {
     display: flex;
@@ -26,6 +30,12 @@
       justify-content: center;
       gap: 64px;
     }
+  }
+
+  &__button {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
   }
 }
 

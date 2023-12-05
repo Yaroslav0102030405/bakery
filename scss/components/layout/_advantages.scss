@@ -3,7 +3,7 @@
   // top: 0;
   padding: 16px 0;
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: 1280px) {
     background-color: var(--color-brand-light);
   }
 
@@ -12,11 +12,11 @@
     flex-direction: column;
     gap: 16px;
     padding: 24px 40px;
-    color: var(--color-primary-light);
+    // color: var(--color-primary-light);
     background-color: #cfcfbc;
     border-radius: 24px;
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: 1280px) {
       flex-direction: row;
       justify-content: space-between;
       gap: 40px;
@@ -29,7 +29,7 @@
     font-size: 14px;
     font-weight: 300;
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: 1280px) {
       font-size: 20px;
     }
   }

@@ -11,21 +11,46 @@
   background-size: cover;
   /* Дєкоративний ефект */
   background-attachment: fixed;
-  padding: 272px 0;
+  padding: 122px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 272px 0;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        103deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url('../images/hero-background@2x.jpg');
+  }
 
   &__title {
-    margin-bottom: 0;
+    margin-bottom: 48px;
     color: var(--color-primary-light);
     text-align: center;
 
     font-size: 67px;
     line-height: 1;
-    font-weight: 900;
-  //  max-width: 292px;
+    font-weight: 600;
+    //  max-width: 292px;
 
-    @media screen and (min-width: $tablet) {
-    font-size: 128px;
-    line-height: 1.5;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0;
+      font-size: 128px;
+      line-height: 1.5;
+      font-weight: 900;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    @media screen and (min-width: $desktop) {
+      display: none;
     }
   }
 }
