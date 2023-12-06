@@ -7,16 +7,24 @@
 .chefs {
   &__title {
     position: relative;
-    margin: 0 auto 80px;
-    width: 520px;
+    margin: 0 auto 24px;
+      width: 310px;
+      font-size: 32px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 60px;
+      width: 520px;
+        font-size: 64px;
+    }
   }
 
   &__list {
     display: flex;
-    // flex-direction: column;
-    gap: 20px 60px;
+    flex-direction: column;
+    gap: 20px;
 
      @media screen and (min-width: $tablet) {
+      flex-direction: row;
      gap: 60px 60px ;
     }
   }
@@ -30,12 +38,17 @@
 
 .chefs__title::before,
 .chefs__title::after {
+  display: none;
   position: absolute;
   bottom: 24px;
   /* display: block; */
   width: 352px;
   border: 2px solid #cfcfbc;
   content: '';
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .chefs__title::before {
@@ -49,24 +62,45 @@
 .chef-card {
   display: flex;
   align-items: flex-start;
-  gap: 30px;
+  gap: 16px;
+
+  @media screen and (min-width: $desktop) {
+    gap: 30px;
+  }
 
   &__photo {
+    width: 140px;
     border-radius: 4px 4px 4px 200px;
     box-shadow:
+      -10px 10px 0 0 var(--color-primary-light),
+      -10px 10px 0 1px #a18268;
+
+      @media screen and (min-width: $desktop) {
+        width: 240px;
+          box-shadow:
       -16px 16px 0 0 var(--color-primary-light),
       -16px 16px 0 1px #a18268;
+      }
   }
 
   &__title {
     margin-bottom: 24px;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 600;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 40px;
+    }
   }
 }
 
 .chef__text p {
+  font-size: 14px;
   margin-bottom: 24px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
 }
 
 .chef__text p:last-child {
