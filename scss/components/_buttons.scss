@@ -1,19 +1,24 @@
 /* Button */
 .button {
   display: block;
-  padding: 16px 32px;
+  padding: 16px 24px;
   border-radius: 8px;
   border: 2px solid var(--color-brand-light);
   background: var(--color-brand-light);
   color: var(--color-primary-light);
 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   /* Добавить символ руки кликабельности при наведении на кнопку у ссылко это по дефолту стоит */
   cursor: pointer;
 
   /* Додавати до кнопки бо вона не наслідує шріфт */
   /* font-family: inherit; */
+
+  @media screen and (min-width: $tablet) {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
 }
 
 .button:hover {

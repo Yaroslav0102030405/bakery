@@ -8,7 +8,7 @@
   &__container {
     overflow: hidden;
   }
-  
+
   //  &__list {
   //   display: flex;
   //   gap: 20px;
@@ -20,7 +20,21 @@
   }
 
   &__title {
-    margin-bottom: 80px;
+    margin-bottom: 24px;
+    font-size: 32px;
+
+     @media screen and (min-width: $tablet) {
+      font-size: 64px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
   }
 }
 

@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px 0;
+  padding: 20px;
   transition:
     opacity 0.3s,
     visibility 0.3s;
@@ -24,9 +24,12 @@
   background-color: var(--color-primary-light);
   border-radius: 32px;
 
-  padding: 128px;
-
+  padding: 48px;
   overflow: auto;
+
+  @media screen and (min-width: $tablet) {
+    padding: 128px;
+  }
 }
 
 .backdrop.is-hidden {

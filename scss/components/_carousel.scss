@@ -4,13 +4,13 @@
   fill: var(--color-primary-light);
   background-color: transparent;
   border-radius: 50%;
-}
 
-.carousel-button:hover {
-  background-color: var(--color-primary-light);
-  fill: var(--color-primary-dark);
-}
+  &:hover {
+    background-color: var(--color-primary-light);
+    fill: var(--color-primary-dark);
+  }
 
-.carousel-button.next {
-  transform: rotate(180deg);
+  &.next {
+    transform: rotate(180deg);
+  }
 }

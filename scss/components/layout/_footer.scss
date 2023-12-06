@@ -6,19 +6,45 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: justify;
+  }
 
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      // justify-content: space-between;
+    }
   }
 
   &__logo {
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   &__social {
     display: flex;
     gap: 22px;
+    justify-content: center;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: flex-start;
+    }
   }
 }
 
