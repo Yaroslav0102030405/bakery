@@ -57,17 +57,29 @@
 }
 
 .footer::before {
-  width: 180px;
-  height: 120px;
+  width: 92.288px;
+  height: 560px;
   left: 0;
-  background-image: url(../images/bread1.png);
+  background-image: url(../images/bread3.png);
+
+  @media screen and (min-width: $tablet) {
+    width: 180px;
+    height: 120px;
+    background-image: url(../images/bread1.png);
+  }
 }
 
 .footer::after {
-  width: 380px;
-  height: 190px;
+  width: 104px;
+  height: 91px;
   right: 0;
-  background-image: url(../images/bread2.png);
+  background-image: url(../images/bread4.png);
+
+  @media screen and (min-width: $tablet) {
+    width: 380px;
+    height: 187px;
+    background-image: url(../images/bread2.png);
+  }
 }
 
 .address {
