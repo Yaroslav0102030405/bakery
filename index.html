@@ -13,6 +13,10 @@
     /> -->
 
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <header class="header">
@@ -149,14 +153,15 @@
       <section class="section formats" id="formats">
         <div class="container">
           <h2 class="section__title formats__title section__title--centered">Формати</h2>
-          <div class="formats__container">
-            <button class="carousel-button" type="button">
+          <div class="formats__slider">
+            <button class="carousel-button prev" type="button">
               <svg class="formats-arrow" width="44" height="44">
                 <use href="./images/icons-svg.svg#icon-Arrow-1"></use>
               </svg>
             </button>
-            <ul class="formats__list">
-              <li>
+            <div class="swiper-container formats__container">
+            <ul class="swiper-wrapper formats__list">
+              <li class="swiper-slide">
                 <article class="format-card">
                   <img class="format-card__image" src="./images/carusel1.jpg" alt="Walrus format">
                   <h3 class="format-card__title" lang="en">Walrus</h3>
@@ -171,7 +176,7 @@
                   </div>
                 </article>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <article class="format-card">
                     <img class="format-card__image" src="./images/carusel2.jpg" alt="Handlebar">
                   <h3 class="format-card__title" lang="en">Horseshoe</h3>
@@ -183,7 +188,7 @@
                   </div>
                 </article>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <article class="format-card">
                     <img class="format-card__image" src="./images/carusel3.jpg" alt="Handlebar format">
                   <h3 class="format-card__title" lang="en">Handlebar</h3>
@@ -195,7 +200,41 @@
                   </div>
                 </article>
               </li>
+               <li class="swiper-slide">
+                <article class="format-card">
+                  <img class="format-card__image" src="./images/carusel1.jpg" alt="Walrus format">
+                  <h3 class="format-card__title" lang="en">Walrus</h3>
+                  <div class="format-card__text">
+                    <p>Площа: до 120 м2</p>
+                    <p>Меню: розширене меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: є</p>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="format-card">
+                    <img class="format-card__image" src="./images/carusel2.jpg" alt="Handlebar">
+                  <h3 class="format-card__title" lang="en">Horseshoe</h3>
+                  <div class="format-card__text">
+                    <p>Площа: до 25 м2</p>
+                    <p>Меню: найпопулярніші позиції меню</p>
+                    <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                    <p>Посадкові місця: відсутні</p>
+                  </div>
+                </article>
+              </li>
             </ul>
+            <div class="pagination">
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+            </div>
+            </div>
             <button class="carousel-button next" type="button">
               <svg class="formats-arrow" width="44" height="44">
                 <use href="./images/icons-svg.svg#icon-Arrow-1"></use>
@@ -437,6 +476,8 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
     <script src="./js/mobile-menu.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
     

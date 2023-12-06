@@ -1,14 +1,22 @@
 .formats {
-  &__container {
+  &__slider {
     display: flex;
     align-items: center;
     gap: 32px;
   }
+
+  &__container {
+    overflow: hidden;
+  }
   
-   &__list {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+  //  &__list {
+  //   display: flex;
+  //   gap: 20px;
+  //   justify-content: center;
+  // }
+
+  &__list {
+    margin-bottom: 32px;
   }
 
   &__title {

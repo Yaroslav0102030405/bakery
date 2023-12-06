@@ -12,7 +12,6 @@
     flex-direction: column;
     gap: 16px;
     padding: 24px 40px;
-    // color: var(--color-primary-light);
     background-color: #cfcfbc;
     border-radius: 24px;
 
@@ -21,6 +20,7 @@
       justify-content: space-between;
       gap: 40px;
       background-color: transparent;
+       color: var(--color-primary-light);
       padding: 0;
     }
   }
