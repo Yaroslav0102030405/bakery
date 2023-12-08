@@ -41,21 +41,10 @@
 //   width: 50%;
 // }
 
-.mobile a {
-  display: flex;
-  flex-direction: column;
-  // gap: 16px;
-  margin-bottom: 16px;
-
-  font-size: 14px;
-  font-weight: 300;
-  text-decoration: none;
-  color: #31261a;
-}
-
-// .mobile__link {
+// .mobile a {
 //   display: flex;
 //   flex-direction: column;
+//   // gap: 16px;
 //   margin-bottom: 16px;
 
 //   font-size: 14px;
@@ -63,6 +52,17 @@
 //   text-decoration: none;
 //   color: #31261a;
 // }
+
+.mobile__link {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #31261a;
+}
 
 .mobile__link:hover {
   color: var(--color-brand-light);
