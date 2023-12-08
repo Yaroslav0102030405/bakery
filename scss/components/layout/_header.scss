@@ -6,9 +6,13 @@
   width: 100%;
   padding-top: 16px;
 
-   @media screen and (min-width: $desktop) {
-       padding-top: 32px;
-    }
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
 
   &__container {
     display: flex;
@@ -33,9 +37,9 @@
   }
 
   &__button {
-  @media screen and (max-width: $desktop) {
-    display: none;
-  }
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
   }
 }
 
@@ -46,7 +50,7 @@
   border: none;
   padding: 0;
   fill: var(--color-primary-light);
-  
+
   @media screen and (min-width: $desktop) {
     display: none;
   }
