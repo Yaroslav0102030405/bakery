@@ -8,7 +8,7 @@
   background-color: var(--color-primary-light);
 
   z-index: 2;
-//   overflow-y: hidden;
+  //   overflow-y: hidden;
   visibility: hidden;
   pointer-events: none;
 
@@ -41,9 +41,10 @@
 //   width: 50%;
 // }
 
-.mobile__link {
+.mobile a {
   display: flex;
   flex-direction: column;
+  // gap: 16px;
   margin-bottom: 16px;
 
   font-size: 14px;
@@ -52,11 +53,22 @@
   color: #31261a;
 }
 
+// .mobile__link {
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: 16px;
+
+//   font-size: 14px;
+//   font-weight: 300;
+//   text-decoration: none;
+//   color: #31261a;
+// }
+
 .mobile__link:hover {
   color: var(--color-brand-light);
 }
 
 .mobile__image {
-  margin-top: 95px;
+  margin-top: 215px;
   margin-left: auto;
 }
