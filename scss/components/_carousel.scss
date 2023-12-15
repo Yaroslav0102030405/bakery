@@ -8,6 +8,7 @@
   &:hover {
     background-color: var(--color-primary-light);
     fill: var(--color-primary-dark);
+    stroke: var(--color-primary-light);
   }
 
   &.next {
