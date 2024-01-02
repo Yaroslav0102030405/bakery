@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     /> -->
+<!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
@@ -54,7 +56,7 @@
             </ul>
            
           </nav>
-          <button class="button header__button modal-btn-open" type="button">
+          <button data-aos="fade-left" class="button header__button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
 
@@ -88,15 +90,18 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero__title"><span class="accent">Сучасна</span> пекарня</h1>
-           <button class="hero__button button modal-btn-open" type="button">
+        <h1 data-aos="fade-right" class="hero__title"><span class="accent">Сучасна</span> пекарня</h1>
+           <button data-aos="fade-up"
+     data-aos-duration="3000"class="hero__button button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
       </section>
       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="advantages__list">
+          <ul data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="advantages__list">
             <li class="advantages__item">Великий попит на ринку</li>
             <li class="advantages__item">Доступні за бюджетом формати</li>
             <li class="advantages__item">Досвідчена управлінська команда</li>
@@ -106,7 +111,8 @@
       <section class="traditions section" id="traditions">
         <div class="container">
           <div class="traditions__container">
-            <div class="traditions__content">
+            <div data-aos="fade-up"
+     data-aos-duration="3000" class="traditions__content">
               <h2 class="traditions__title section__title">
                 Новий формат традицій
               </h2>
@@ -121,7 +127,7 @@
                 наших пекарень стильний дизайн та висока якість обслуговування!
               </p>
             </div>
-            <img
+            <img data-aos="fade-left"
               class="traditions__baker"
               srcset="./images/baker-man@1x.jpg 1x, ./images/baker-man@2x.jpg 2x"
               src="./images/baker-man.jpg"
@@ -132,12 +138,18 @@
       </section>
       <section class="section chefs" id="chefs">
         <div class="container">
-          <h2 class="section__title chefs__title section__title--centered">
+          <h2 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" 
+     class="section__title chefs__title section__title--centered">
             Наші найкращі <span>шеф -кухарі</span>
           </h2>
           <ul class="chefs__list">
             <li class="chefs__item">
-              <article class="chef-card">
+              <article data-aos="flip-left" 
+              data-aos-easing="ease-out-cubic" 
+              data-aos-duration="2000" 
+              class="chef-card">
                 <img
                   class="chef-card__photo"
                   src="./images/nastya-shef.jpg"
@@ -160,7 +172,9 @@
               </article>
             </li>
             <li class="chefs__item">
-              <article class="chef-card">
+              <article data-aos="flip-left" 
+              data-aos-easing="ease-out-cubic" 
+              data-aos-duration="2000"  class="chef-card">
                 <img
                   class="chef-card__photo"
                   src="./images/vlad-chef.jpg"
@@ -188,7 +202,7 @@
       </section>
       <section class="section formats" id="formats">
         <div class="container">
-          <h2 class="section__title formats__title section__title--centered">Формати</h2>
+          <h2 data-aos="zoom-in" class="section__title formats__title section__title--centered">Формати</h2>
           <div class="formats__slider">
             <button class="formats__button carousel-button prev" type="button">
               <svg class="formats-arrow" width="44" height="44">
@@ -198,7 +212,9 @@
             <div class="swiper swiper-container formats__container">
             <ul class="swiper-wrapper formats__list">
               <li class="swiper-slide">
-                <article class="format-card">
+                <article data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="format-card">
                   <img class="format-card__image" src="./images/carusel1.jpg" alt="Walrus format">
                   <h3 class="format-card__title" lang="en">Walrus</h3>
                   <div class="format-card__text">
@@ -282,7 +298,7 @@
       <section class="section contact" id="contact">
         <div class="container">
           <div class="contact__container">
-            <div class="contact__form">
+            <div data-aos="zoom-in" class="contact__form">
               <h2 class="contact__title section__title">
                 Приєднуйся до мережі пекарень
               </h2>
@@ -343,7 +359,9 @@
                 </p>
               </form>
             </div>
-            <iframe
+            <iframe data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
               class="contact__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148784.80927513257!2d18.525220371973983!3d54.36117516719989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2z0pDQtNCw0L3RgdGM0LosINCf0L7Qu9GM0YnQsA!5e0!3m2!1suk!2sua!4v1701261627576!5m2!1suk!2sua"
               style="border: 0"
@@ -357,7 +375,8 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__container">
+        <div data-aos="fade-up"
+     data-aos-duration="3000" class="footer__container">
           <div class="footer__logo">
             <a href="#"
               ><img src="./images/logo.svg" slot="Логотип сучасної пекарні"
@@ -509,6 +528,9 @@
         </form>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
