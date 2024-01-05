@@ -14,7 +14,27 @@ body {
   line-height: 1.5;
   margin: 0;
 
+  scroll-snap-type: red;
+
   cursor: url('../images/cursor-green.png'), auto;
+}
+
+.window {
+overflow: auto;
+border: 1px solid red;
+border-radius: 5px 0 0 5px;
+}
+
+::-webkit-scrollbar {
+  // border: 1px solid green;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: ea5459;
+  background-color: #819b57;
+  // border: 1px solid green;
 }
 
 body.modal-open {
