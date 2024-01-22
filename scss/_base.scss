@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+// html {
+//   scroll-behavior: smooth;
+// }
+
 /* Base */
 body {
   color: var(--color-primary-dark);
@@ -21,14 +25,18 @@ body {
 
 // add scrollbar
 .window {
-overflow: auto;
-// border: 1px solid #fff;
-border-radius: 5px 0 0 5px;
+  overflow: auto;
+  // border: 1px solid #fff;
+  border-radius: 5px 0 0 5px;
 }
 
 ::-webkit-scrollbar {
   // border: 1px solid #fff;
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 ::-webkit-scrollbar-thumb {
@@ -36,7 +44,6 @@ border-radius: 5px 0 0 5px;
   background: #819b57;
   // border: 1px solid #fff;
 }
-
 
 body.modal-open {
   overflow: hidden;
