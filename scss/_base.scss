@@ -23,6 +23,10 @@ body {
   cursor: url('../images/cursor-green.png'), auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // add scrollbar
 .window {
   overflow: auto;
