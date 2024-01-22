@@ -10,6 +10,8 @@
 
 /* Base */
 body {
+  margin: 0;
+  padding: 0;
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
   font-family: 'Poppins', sans-serif;
@@ -23,9 +25,13 @@ body {
   cursor: url('../images/cursor-green.png'), auto;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: auto;
+// }
+
+// scroll-container {
+//   scroll-behavior: smooth;
+// }
 
 // add scrollbar
 .window {
