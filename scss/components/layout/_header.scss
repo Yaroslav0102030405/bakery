@@ -32,7 +32,8 @@
     @media screen and (min-width: $desktop) {
       display: flex;
       flex-grow: 1;
-      justify-content: center;
+      // justify-content: center;
+      justify-content: end;
       gap: 64px;
     }
   }
